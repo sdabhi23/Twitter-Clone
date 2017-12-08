@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">Task1-HPDF</string>
+    <string name="open">Task1Sample</string>
+    <string name="close">Task1Sample</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- Drawer Item Strings -->
+    <string name="item_profile">Profile</string>
+    <string name="item_lists">Lists</string>
+    <string name="item_moments">Moments</string>
+    <string name="item_highlights">Highlights</string>
+    <string name="item_sap">Status and Privacy</string>
+    <string name="item_help">Help Center</string>
+    <string name="item_night">Night Mode</string>
+    <string name="item_qr">QR Code</string>
+
+    <string name="tab_notif">Notifications</string>
+    <string name="tab_msg">Messages</string>
+    <string name="title_activity_search">Task1-HPDF</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
