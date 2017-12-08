@@ -1,8 +1,8 @@
 # Twitter Clone (HPDF Task 1)
 
-The task allotted was to replicate the _**User Interface** of Twitter's app for Android_ with mock hard-coded data whereever required.
+The task allotted was to replicate the _**User Interface** of Twitter's app for Android_ with mock hard-coded data wherever required.
 
-[Apk file](http://www.mediafire.com/file/zg4bf21d84l5w15/HPDF-Task1.apk)
+[Link for the .apk file](http://www.mediafire.com/file/zg4bf21d84l5w15/HPDF-Task1.apk)
 
 ![The app in action !](https://media.giphy.com/media/xUOxf39oNp58S5ClfG/giphy.gif)
 
