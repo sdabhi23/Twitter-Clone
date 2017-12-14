@@ -19,7 +19,7 @@ As usual, you get started by cloning the project to your local machine:
 $ git clone https://github.com/sdabhi23/HPDF-Task1-Twitter-Clone.git
 ```
 
- * Now look for the ap folder with ther version number you want to build (For example, **_app v2_** if you want to build version 2).
+ * Now look for the app folder with the version number you want to build (For example, **_app v2_** if you want to build version 2).
  * Rename it to **_app_** and delete all the other folders beginning with app (For example, **_app v1_**)
  * In the end open your Android Studio and go to **Files > Open Project**.
 
