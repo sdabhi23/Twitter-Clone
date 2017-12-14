@@ -6,7 +6,7 @@ The task allotted was to replicate the _**User Interface** of Twitter's app for 
 
 Version 1 | Version 2
 ---|---
-![v1](http://gph.to/2AHbwvC)|![v2](http://gph.to/2ysGRMd)
+![v1](https://media.giphy.com/media/xUOxf39oNp58S5ClfG/giphy.gif)|![v2](https://media.giphy.com/media/l3mZ3KEvxfFqKJZBu/giphy.gif)
 [Apk file](http://www.mediafire.com/file/ez00qt3wv357b2k/HPDF-Task1-v1.apk)|[Apk file](http://www.mediafire.com/file/zw1nffrxb8v988u/HPDF-Task1-v2.apk)
 
 ## Getting Started
