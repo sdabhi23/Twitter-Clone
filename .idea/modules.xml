@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HPDF-Task1.iml" filepath="$PROJECT_DIR$/HPDF-Task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HPDF-Task1-Twitter-Clone.iml" filepath="$PROJECT_DIR$/.idea/modules/HPDF-Task1-Twitter-Clone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
