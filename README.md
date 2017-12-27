@@ -32,7 +32,7 @@ Having **JDK 8 or higher** installed along side **Android Studio 3.0 or higher**
 ## Android Versioning Information
  Specifications | Version 1 | Version 2
  ---|---|---
- Target SDK Version | 26 (Android Marshmallow) | 26 (Android Marshmallow)
+ Target SDK Version | 26 (Android Oreo) | 26 (Android Oreo)
  Minimum SDK Version | 19 (Android KitKat) | 19 (Android Kitkat)
  Build Tools Version | 26.0.2 | 26.0.2
  Gradle Plugin Version | 4.1.0 | 4.1.0
