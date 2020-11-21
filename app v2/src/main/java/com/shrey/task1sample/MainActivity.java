@@ -64,8 +64,9 @@ public class MainActivity extends AppCompatActivity {
         // Logic for the side navigation drawer
 
         // The Account Profiles
-        ProfileDrawerItem profile1 = new ProfileDrawerItem().withName("Shrey Dabhi").withEmail("@sdabhi23").withIcon(getResources().getDrawable(R.drawable.main_profile_1));
-        ProfileDrawerItem profile2 = new ProfileDrawerItem().withName("DroidLearner").withEmail("@LearnerDroid").withIcon(getResources().getDrawable(R.drawable.main_profile_2));
+        Resources res = this.getResources();
+        ProfileDrawerItem profile1 = new ProfileDrawerItem().withName("Dana Scott").withEmail("@Scottie85").withIcon(ResourcesCompat.getDrawable(res, R.drawable.main_profile_1, null));
+        ProfileDrawerItem profile2 = new ProfileDrawerItem().withName("James T. Kirk").withEmail("@Cap.Kirk30").withIcon(ResourcesCompat.getDrawable(res, R.drawable.main_profile_2, null));
 
         AccountHeader headerResult = new AccountHeaderBuilder()
                 .withActivity(this)
@@ -243,10 +244,10 @@ public class MainActivity extends AppCompatActivity {
 
         final ListView listview = findViewById(R.id.list);
         final ArrayList<Tweet> list = new ArrayList<Tweet>();
-        list.add(new Tweet("Parth Modi", "@KingTargStark", "30m", "Hey there !!", R.drawable.profile_3, "#61045F", 5, 15, 100));
-        list.add(new Tweet("Sudhir Phaugat", "@ModestHero", "40m", "Hey there !!", R.drawable.profile_4, "#333B2E", 85, 500, 1000));
-        list.add(new Tweet("Bhavini Agrawal", "@MadQueen", "50m", "Hey there !!", R.drawable.profile_2, "#44322E", 75, 80, 250));
-        list.add(new Tweet("Anushka Dube", "@anudube22", "1h", "Hey there !!", R.drawable.profile_1, "#3689F3", 50, 100, 500));
+        list.add(new Tweet("Doug Judy", "@Judy98", "30m", "Hey there !!", R.drawable.profile_3, "#61045F", 0, 5, 1));
+        list.add(new Tweet("Ariel Pollich", "@Ariel49", "40m", "Hey there !!", R.drawable.profile_4, "#333B2E", 4, 500, 10));
+        list.add(new Tweet("Sasha Ho", "@Makenna38", "50m", "Hey there !!", R.drawable.profile_2, "#44322E", 1, 8, 25));
+        list.add(new Tweet("Zia Burkett", "@Burketto", "1h", "Hey there !!", R.drawable.profile_1, "#3689F3", 5, 1, 5));
 
         final TweetAdapter adapter = new TweetAdapter(this, R.layout.tweet_row, list);
         listview.setAdapter(adapter);

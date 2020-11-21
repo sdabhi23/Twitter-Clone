@@ -32,7 +32,6 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Anushka"
                 android:textColor="@color/draw_head"
                 android:textStyle="bold"
                 android:layout_margin="2.5dp"
@@ -43,7 +42,6 @@
                 android:id="@+id/handle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" @anu_21"
                 android:layout_margin="2.5dp"
                 android:textSize="15sp"
                 android:textColor="@color/draw_description"
@@ -70,7 +68,7 @@
                 android:textColor="@color/draw_description"
                 android:layout_toEndOf="@id/dotSep"/>
 
-            <TextView
+            <com.mikepenz.iconics.view.IconicsTextView
                 android:id="@+id/dropDown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
