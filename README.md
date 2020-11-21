@@ -2,14 +2,16 @@
 
 This project was built as a part of Hasura Product Development Fellowship (HPDF) in November 2017.
 
+The dependencies have been updated and the project has been migrated to AndroidX in November 2020.
+
 The task allotted was to replicate the _**User Interface** of Twitter's app for Android_ with mock hard-coded data wherever required.
 
 **The UI of the app has been updated in v2 according to the UI of Twitter's Android app v7.24.1**
 
-| Version 1                         | Version 2 (Twitter v7.24.1)                                                 |
-| --------------------------------- | --------------------------------------------------------------------------- |
-| ![v1](media/twitter-ui-v1.gif)    | ![v2](https://media.giphy.com/media/l3mZ3KEvxfFqKJZBu/giphy.gif)            |
-| [Apk file](apks/v1/app-debug.apk) | [Apk file](http://www.mediafire.com/file/zw1nffrxb8v988u/HPDF-Task1-v2.apk) |
+| Version 1                         | Version 2 (Twitter v7.24.1)       |
+| --------------------------------- | --------------------------------- |
+| ![v1](media/twitter-ui-v1.gif)    | ![v1](media/twitter-ui-v2.gif)    |
+| [Apk file](apks/v1/app-debug.apk) | [Apk file](apks/v2/app-debug.apk) |
 
 ## Getting Started
 
