@@ -1,10 +1,13 @@
 package com.shrey.task1sample;
 
+import android.content.res.Resources;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.res.ResourcesCompat;
+
 import android.view.WindowManager;
 
 public class Main2Activity extends AppCompatActivity {
@@ -18,7 +21,9 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_material);
+
+        Resources res = this.getResources();
+        final Drawable upArrow = ResourcesCompat.getDrawable(res, R.drawable.abc_ic_ab_back_material, null);
         upArrow.setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
 

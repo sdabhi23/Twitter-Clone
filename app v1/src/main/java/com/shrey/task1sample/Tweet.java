@@ -1,8 +1,6 @@
 package com.shrey.task1sample;
 
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
+import androidx.annotation.DrawableRes;
 
 /**
  * Created by Shrey on 12/3/2017.

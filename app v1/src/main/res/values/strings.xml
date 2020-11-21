@@ -1,9 +1,9 @@
 <resources>
 
-    <string name="app_name">Task1-HPDF</string>
-    <string name="open">Task1Sample</string>
-    <string name="close">Task1Sample</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="app_name">Twitter UI</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_main2">Twitter UI</string>
 
     <!-- Drawer Item Strings -->
     <string name="item_profile">Profile</string>

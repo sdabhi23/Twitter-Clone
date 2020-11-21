@@ -1,15 +1,17 @@
 package com.shrey.task1sample;
 
-import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabLayout;
+
+import androidx.core.content.res.ResourcesCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 .addDrawerItems(
 
                         // Adding different options to th side navigation drawer
-                        new PrimaryDrawerItem().withIdentifier(2).withName(R.string.item_profile).withIcon(FontAwesome.Icon.faw_user_o).withSelectable(false),
+                        new PrimaryDrawerItem().withIdentifier(2).withName(R.string.item_profile).withIcon(FontAwesome.Icon.faw_user).withSelectable(false),
                         new PrimaryDrawerItem().withIdentifier(3).withName(R.string.item_lists).withIcon(FontAwesome.Icon.faw_list_alt).withSelectable(false),
                         new PrimaryDrawerItem().withIdentifier(4).withName(R.string.item_moments).withIcon(FontAwesome.Icon.faw_bolt).withSelectable(false),
                         new PrimaryDrawerItem().withIdentifier(5).withName(R.string.item_highlights).withIcon(FontAwesome.Icon.faw_clone).withSelectable(false),
@@ -97,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 .addStickyDrawerItems(
 
                         // Adding options to the footer of the side navigation drawer
-                        new SecondaryDrawerItem().withName(R.string.item_night).withIcon(FontAwesome.Icon.faw_moon_o).withIconColorRes(R.color.colorAccent).withTextColorRes(R.color.colorAccent),
+                        new SecondaryDrawerItem().withName(R.string.item_night).withIcon(FontAwesome.Icon.faw_moon).withIconColorRes(R.color.colorAccent).withTextColorRes(R.color.colorAccent),
                         new SecondaryDrawerItem().withName(R.string.item_qr).withIcon(FontAwesome.Icon.faw_qrcode).withIconColorRes(R.color.colorAccent).withTextColorRes(R.color.colorAccent)
 
                 )
@@ -120,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout.Tab home = tabLayout.newTab().setIcon(new IconicsDrawable(this).icon(FontAwesome.Icon.faw_home).colorRes(R.color.colorAccent));
         TabLayout.Tab search = tabLayout.newTab().setIcon(new IconicsDrawable(this).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.draw_description));
-        TabLayout.Tab notif = tabLayout.newTab().setIcon(new IconicsDrawable(this).icon(FontAwesome.Icon.faw_bell_o).colorRes(R.color.draw_description));
-        TabLayout.Tab msg = tabLayout.newTab().setIcon(new IconicsDrawable(this).icon(FontAwesome.Icon.faw_envelope_o).colorRes(R.color.draw_description));
+        TabLayout.Tab notif = tabLayout.newTab().setIcon(new IconicsDrawable(this).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.draw_description));
+        TabLayout.Tab msg = tabLayout.newTab().setIcon(new IconicsDrawable(this).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.draw_description));
 
         tabLayout.addTab(home);
         tabLayout.addTab(search);
@@ -140,10 +142,10 @@ public class MainActivity extends AppCompatActivity {
 
                     home.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_home).colorRes(R.color.colorAccent));
                     search.setIcon(new IconicsDrawable(getApplicationContext()).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.draw_description));
-                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell_o).colorRes(R.color.draw_description));
-                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope_o).colorRes(R.color.draw_description));
+                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.draw_description));
+                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.draw_description));
 
-                }else if(tabLayout.getSelectedTabPosition() == 1){
+                } else if(tabLayout.getSelectedTabPosition() == 1){
 
                     //Toast.makeText(getApplicationContext(), "Tab " + tabLayout.getSelectedTabPosition(), Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getApplicationContext(), Main2Activity.class);
@@ -159,10 +161,10 @@ public class MainActivity extends AppCompatActivity {
 
                     home.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_home).colorRes(R.color.draw_description));
                     search.setIcon(new IconicsDrawable(getApplicationContext()).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.colorAccent));
-                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell_o).colorRes(R.color.draw_description));
-                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope_o).colorRes(R.color.draw_description));
+                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.draw_description));
+                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.draw_description));
 
-                }else if(tabLayout.getSelectedTabPosition() == 2){
+                } else if(tabLayout.getSelectedTabPosition() == 2){
 
                     mSwipeRefresh.setVisibility(View.GONE);
                     mBodyNotif.setVisibility(View.VISIBLE);
@@ -171,9 +173,9 @@ public class MainActivity extends AppCompatActivity {
                     home.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_home).colorRes(R.color.draw_description));
                     search.setIcon(new IconicsDrawable(getApplicationContext()).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.draw_description));
                     notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.colorAccent));
-                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope_o).colorRes(R.color.draw_description));
+                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.draw_description));
 
-                }else if(tabLayout.getSelectedTabPosition() == 3){
+                } else if(tabLayout.getSelectedTabPosition() == 3){
 
                     mSwipeRefresh.setVisibility(View.GONE);
                     mBodyNotif.setVisibility(View.GONE);
@@ -181,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
 
                     home.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_home).colorRes(R.color.draw_description));
                     search.setIcon(new IconicsDrawable(getApplicationContext()).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.draw_description));
-                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell_o).colorRes(R.color.draw_description));
+                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.draw_description));
                     msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.colorAccent));
 
                 }
@@ -223,9 +225,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(IconicsContextWrapper.wrap(newBase));
-    }
+//    @Override
+//    protected void attachBaseContext(Context newBase) {
+//        super.attachBaseContext(IconicsContextWrapper.wrap(newBase));
+//    }
 
 }
