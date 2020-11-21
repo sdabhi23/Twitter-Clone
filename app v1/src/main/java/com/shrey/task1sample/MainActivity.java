@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.iconics.IconicsDrawable;
-import com.mikepenz.iconics.context.IconicsContextWrapper;
+
 import com.mikepenz.ionicons_typeface_library.Ionicons;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
@@ -147,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if(tabLayout.getSelectedTabPosition() == 1){
 
-                    //Toast.makeText(getApplicationContext(), "Tab " + tabLayout.getSelectedTabPosition(), Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getApplicationContext(), Main2Activity.class);
                     startActivity(i);
 
@@ -172,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
                     home.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_home).colorRes(R.color.draw_description));
                     search.setIcon(new IconicsDrawable(getApplicationContext()).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.draw_description));
-                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.colorAccent));
+                    notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell1).colorRes(R.color.colorAccent));
                     msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.draw_description));
 
                 } else if(tabLayout.getSelectedTabPosition() == 3){
@@ -184,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
                     home.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_home).colorRes(R.color.draw_description));
                     search.setIcon(new IconicsDrawable(getApplicationContext()).icon(Ionicons.Icon.ion_ios_search).colorRes(R.color.draw_description));
                     notif.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_bell).colorRes(R.color.draw_description));
-                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope).colorRes(R.color.colorAccent));
+                    msg.setIcon(new IconicsDrawable(getApplicationContext()).icon(FontAwesome.Icon.faw_envelope1).colorRes(R.color.colorAccent));
 
                 }
             }
@@ -224,10 +223,5 @@ public class MainActivity extends AppCompatActivity {
                 .setAction("Action", null).show());
 
     }
-
-//    @Override
-//    protected void attachBaseContext(Context newBase) {
-//        super.attachBaseContext(IconicsContextWrapper.wrap(newBase));
-//    }
 
 }
