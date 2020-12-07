@@ -10,7 +10,7 @@ The task allotted was to replicate the _**User Interface** of Twitter's app for 
 
 | Version 1                         | Version 2 (Twitter v7.24.1)       |
 | --------------------------------- | --------------------------------- |
-| ![v1](media/twitter-ui-v1.gif)    | ![v1](media/twitter-ui-v2.gif)    |
+| ![v1](media/twitter-ui-v1.gif)    | ![v2](media/twitter-ui-v2.gif)    |
 | [Apk file](apks/v1/app-debug.apk) | [Apk file](apks/v2/app-debug.apk) |
 
 ## Getting Started
